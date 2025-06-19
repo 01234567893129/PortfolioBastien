@@ -1,1 +1,230 @@
 <h1>My Portfolio</h1>
+📁 Structure du projet Portfolio BIEN-AIMÉ Bastien
+
+/project-portfolio-bastien
+├── index.html
+├── apropos.html
+├── competences.html
+├── projets.html
+├── contact.html
+├── style.css
+├── script.js
+└── README.md
+
+index.html
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil - Portfolio Bastien</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur mon portfolio !</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <p>Découvrez mes projets web et mes compétences en développement front-end.</p>
+  </main>
+</body>
+</html>
+```
+ apropos.html
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>À propos - Portfolio Bastien</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>À propos de moi</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <p>Je suis <strong>BIEN-AIMÉ Bastien</strong>, passionné par la création de sites web modernes et interactifs.</p>
+  </main>
+</body>
+</html>
+```
+
+competences.html
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Compétences - Portfolio Bastien</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mes Compétences</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </main>
+</body>
+</html>
+```
+projets.html
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projets - Portfolio Bastien</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mes Projets</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h2>Mini-jeu interactif</h2>
+    <p>Un mini-jeu développé en JavaScript qui utilise des événements DOM.</p>
+    <p><strong>Technologies :</strong> #html #css #js</p>
+  </main>
+</body>
+</html>
+```
+contact.html
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Portfolio Bastien</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Contactez-moi</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="competences.html">Compétences</a>
+      <a href="projets.html">Projets</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <form id="contactForm">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" required><br>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" required><br>
+
+      <label for="message">Message :</label>
+      <textarea id="message" required></textarea><br>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </main>
+</body>
+</html>
+```
+ style.css
+```css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+```
+ script.js
+```javascript
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Merci pour votre message !");
+});
+```
+ README.md
+```md
+# Portfolio de BIEN-AIMÉ Bastien
+
+## Description
+Ce portfolio présente mes compétences en développement web, ainsi que mes projets personnels comme un mini-jeu JavaScript interactif.
+
+## Technologies
+- HTML
+- CSS
+- JavaScript
+
+## Instructions
+1. Ouvrir `index.html` dans un navigateur
+2. Naviguer à travers les pages via le menu
+3. Le formulaire de contact est fonctionnel avec validation JS
+## Déploiement
+Déployez ce projet sur GitHub Pages pour le rendre accessible en ligne.
